@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+.select{
+    margin: 100px auto;
+    width: 400px;
+    height: 40px;
+    border: 1px solid rgba(0, 204, 255, 0.76);
+    border-radius: 3px;
+}
+
+.select_top{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+}
+
+.select_body{
+    margin-top: 3px;
+}
+
+.select_body_item{
+    padding: 0 10px;
+    height: 40px;
+    border: 1px solid rgba(0, 204, 255, 0.63);
+    border-radius: 3px;
+    background-color: rgba(193, 225, 253, 0.486);
+    display: flex;
+    align-items: center;
+    user-select: none;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition:  0.3s ease;
+}
+
+.select_arrow{
+    transform: rotate(-90deg);
+    transition: 0.2s;
+}
+
+.select_arrow.rotate{
+    transform: rotate(90deg);
+}
+
+.select_body{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.active{
+    background-color: rgba(240, 248, 255, 0.678);
+}
+
+.select_body_item:hover{
+    background-color: rgba(240, 248, 255, 0.678);
+}
+
+.select_body_item:not(:last-child){
+    margin-bottom: 5px;
+}
